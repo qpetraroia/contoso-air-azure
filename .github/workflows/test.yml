@@ -50,7 +50,7 @@ env:
     ./src/web/manifests/hpa.yaml
     ./src/web/manifests/service.yaml
   DOCKER_FILE: ./src/web/Dockerfile
-  BUILD_CONTEXT_PATH: ./src/web/Dockerfile
+  BUILD_CONTEXT_PATH: ./src/web/
   NAMESPACE: namespace-workflow-1746496533700
   ENABLENAMESPACECREATION: false
   AUTH_TYPE: SERVICE_PRINCIPAL
