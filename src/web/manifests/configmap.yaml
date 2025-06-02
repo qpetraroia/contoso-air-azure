@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: contosoair-config
+  namespace: namespace-workflow-1747090272652
+  labels:
+    app.kubernetes.io/name: contosoair
+    kubernetes.azure.com/generator: devhub
+data:
