@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: contosotest-config
+  namespace: contosoair
+  labels:
+    app.kubernetes.io/name: contosotest
+    kubernetes.azure.com/generator: devhub
+data:
