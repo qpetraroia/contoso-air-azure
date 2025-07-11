@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: contoso
+  namespace: namespace-workflow-1752269965380
+  labels:
+    app.kubernetes.io/name: contoso
+    kubernetes.azure.com/generator: devhub
+spec:
+  type: LoadBalancer
+  selector:
+    app.kubernetes.io/name: contoso
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
