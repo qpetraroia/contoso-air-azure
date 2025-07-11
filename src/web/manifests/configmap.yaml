@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: contoso-config
+  namespace: namespace-workflow-1752269965380
+  labels:
+    app.kubernetes.io/name: contoso
+    kubernetes.azure.com/generator: devhub
+data:
