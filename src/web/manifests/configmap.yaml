@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: contosotest-config
-  namespace: contosoair
+  name: contoso-test-config
+  namespace: namespace-workflow-1752269757032
   labels:
-    app.kubernetes.io/name: contosotest
+    app.kubernetes.io/name: contoso-test
     kubernetes.azure.com/generator: devhub
 data:

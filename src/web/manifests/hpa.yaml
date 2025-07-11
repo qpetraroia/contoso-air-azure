@@ -1,16 +1,16 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: contosotest
+  name: contoso-test
   labels:
-    app.kubernetes.io/name: contosotest
-    app.kubernetes.io/part-of: contosotest-project
+    app.kubernetes.io/name: contoso-test
+    app.kubernetes.io/part-of: contoso-test-project
     kubernetes.azure.com/generator: devhub
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: contosotest
+    name: contoso-test
   minReplicas: 2
   maxReplicas: 5
   metrics:

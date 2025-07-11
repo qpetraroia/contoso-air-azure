@@ -1,13 +1,13 @@
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
-  name: contosotest
+  name: contoso-test
   labels:
-    app.kubernetes.io/name: contosotest
-    app.kubernetes.io/part-of: contosotest-project
+    app.kubernetes.io/name: contoso-test
+    app.kubernetes.io/part-of: contoso-test-project
     kubernetes.azure.com/generator: devhub
 spec:
   maxUnavailable: 1
   selector:
     matchLabels:
-      app: contosotest
+      app: contoso-test
